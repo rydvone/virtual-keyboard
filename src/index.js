@@ -196,24 +196,13 @@ window.addEventListener('keydown', realKeyboardDown);
 window.addEventListener('keyup', realKeyboardUp);
 
 function setLocalStorage() {
-  // let stateCaps = '';
-  // if (capsLock.classList.contains('active')) {
-  //   stateCaps = 'active';
-  // }
   localStorage.clear();
   localStorage.setItem('lang', JSON.stringify(lang));
   localStorage.setItem('stateTextarea', JSON.stringify(textarea.value));
-  // localStorage.setItem('stateCaps', JSON.stringify(stateCaps));
 }
 window.addEventListener('beforeunload', setLocalStorage);
 
 function getLocalStorage() {
-  // if (localStorage.getItem('stateCaps')) {
-  //   const stateCaps = JSON.parse(localStorage.getItem('stateCaps'));
-  //   if (stateCaps === 'active') {
-  //     capsLock.classList.add('active');
-  //   }
-  // }
   if (localStorage.getItem('lang')) {
     lang = JSON.parse(localStorage.getItem('lang'));
     switchLangKey(lang);
