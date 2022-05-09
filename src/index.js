@@ -195,10 +195,7 @@ function realKeyboardUp(e) {
 window.addEventListener('keydown', realKeyboardDown);
 window.addEventListener('keyup', realKeyboardUp);
 
-// }
-
 function setLocalStorage() {
-  // state = `${lang}Standart`;
   let stateCaps = '';
   if (capsLock.classList.contains('active')) {
     stateCaps = 'active';
