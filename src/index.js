@@ -1,8 +1,4 @@
-// import keyboardSubscribe from "./assets/components/keyboard-subcribe.js";
 import createMainPage from './assets/components/create-page.js';
-// import createKeyboard from "./assets/components/create-keyboard.js";
-// import dataKeyList from "./assets/components/keyboard-list-data.js";
-// import dataKeyRowList from "./assets/components/keyboard-list.js";
 
 let lang = 'en';
 const state = 'enStandart';
