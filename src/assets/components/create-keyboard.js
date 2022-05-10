@@ -1,5 +1,5 @@
-import dataKeyList from './keyboard-list-data';
-import dataKeyRowList from './keyboard-list';
+import dataKeyList from './keyboard-list-data.js';
+import dataKeyRowList from './keyboard-list.js';
 
 class ButtonContent {
   constructor(state, stateId, id, tagAppend, data) {

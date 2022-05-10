@@ -1,4 +1,4 @@
-import createKeyboard from './create-keyboard';
+import createKeyboard from './create-keyboard.js';
 
 function createMainPage(state) {
   document.body.innerHTML = '';

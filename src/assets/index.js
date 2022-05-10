@@ -1,4 +1,4 @@
-import createMainPage from './assets/components/create-page';
+import createMainPage from './assets/components/create-page.js';
 
 let lang = 'en';
 const state = 'enStandart';
