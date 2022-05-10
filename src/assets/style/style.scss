@@ -18,7 +18,6 @@ $color-primary: #e6a272;
 $color-primary-system: #dd9059;
 $color-primary-middle: #f5c19c;
 $color-primary-light: #ffe0ca;
-/* -------------------font-property-------------------*/
 $fz-logo-title: 32px;
 $lh-logo-title: 1.1em;
 $ls-logo-title: 0.06em;
@@ -187,6 +186,15 @@ body {
     background-color: $color-primary-middle;
     box-shadow: 0 0 3px 3px $color-dark-xl;
     cursor: pointer;
+  }
+
+  &:active {
+    font-weight: 700;
+    font-size: $fz-text-key-hover;
+    background-color: $color-primary-light;
+    box-shadow: 0 0 3px 3px $color-dark-xl;
+    border-radius: 2px;
+    transition: 0.05s;
   }
 
   &.active {
