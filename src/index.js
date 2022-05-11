@@ -234,7 +234,9 @@ function writeTextRealKeyboard(e) {
   textarea.focus();
   let symbol = '';
   const res = keyElement.find((el) => el.classList.contains(e.code));
-
+  if (res == undefined) {
+    return;
+  }
   if (arrKeySystem.indexOf(res.outerText) === -1) {
     symbol = res.outerText;
   } else {
