@@ -1,0 +1,400 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.scroll-disabled {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  color: #ffffff;
+  background-color: #292929;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 120px;
+}
+
+.header .h1 {
+  font-family: Merriweather;
+  font-size: 36px;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  font-style: bold;
+  color: #ffe0ca;
+  margin: 0;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.textarea {
+  font-family: Inter;
+  font-size: 24px;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 15px 4px rgba(255, 255, 230, 0.06);
+          box-shadow: 0 0 15px 4px rgba(255, 255, 230, 0.06);
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-indent: none;
+  outline: none;
+  word-break: break-all;
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
+  min-height: 106px;
+  background-color: #545454;
+  margin: 50px 0;
+  padding: 10px;
+  border: #ffe0ca 3px solid;
+  border-radius: 5px;
+}
+
+.about {
+  color: #fafafa;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 1.3em;
+  letter-spacing: 0.06em;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.2%;
+  width: 100%;
+  height: 40px;
+}
+
+.key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6%;
+  height: 100%;
+  color: brown;
+  background-color: #e6a272;
+  border: #e6a272 2px solid;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.key:hover {
+  background-color: #f5c19c;
+  -webkit-box-shadow: 0 0 3px 3px #4c4c4c;
+          box-shadow: 0 0 3px 3px #4c4c4c;
+  cursor: pointer;
+}
+
+.key:active {
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #ffe0ca;
+  -webkit-box-shadow: 0 0 3px 3px #4c4c4c;
+          box-shadow: 0 0 3px 3px #4c4c4c;
+  border-radius: 2px;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+}
+
+.key.active {
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #ffe0ca;
+  -webkit-box-shadow: 0 0 3px 3px #4c4c4c;
+          box-shadow: 0 0 3px 3px #4c4c4c;
+  border-radius: 2px;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+}
+
+.Backspace,
+.CapsLock,
+.ShiftLeft {
+  width: 16%;
+  background-color: #dd9059;
+  border: #e6a272 2px solid;
+}
+
+.Tab {
+  width: 8%;
+  background-color: #dd9059;
+  border: #e6a272 2px solid;
+}
+
+.Delete {
+  width: 6.8%;
+  background-color: #dd9059;
+  border: #e6a272 2px solid;
+}
+
+.Enter,
+.ShiftRight {
+  width: 13%;
+  background-color: #dd9059;
+  border: #e6a272 2px solid;
+}
+
+.ShiftRight {
+  width: 14.5%;
+}
+
+.Space {
+  width: 50%;
+  max-width: 50%;
+  background-color: #dd9059;
+  border: #e6a272 2px solid;
+}
+
+.ControlLeft,
+.MetaLeft,
+.AltLeft,
+.AltRight,
+.ControlRight,
+.ArrowUp,
+.ArrowLeft,
+.ArrowDown,
+.ArrowRight {
+  width: 8%;
+  background-color: #dd9059;
+  border: #e6a272 2px solid;
+}
+
+.ArrowUp,
+.ArrowLeft,
+.ArrowDown,
+.ArrowRight {
+  width: 6%;
+}
+
+.enStandart,
+.enCapsLock,
+.enShift,
+.enShiftCapsLock,
+.ruStandart,
+.ruCapsLock,
+.ruShift,
+.ruShiftCapsLock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.enStandart.hide {
+  display: none;
+}
+
+.enCapsLock.hide {
+  display: none;
+}
+
+.enShift.hide {
+  display: none;
+}
+
+.enShiftCapsLock.hide {
+  display: none;
+}
+
+.ruStandart.hide {
+  display: none;
+}
+
+.ruCapsLock.hide {
+  display: none;
+}
+
+.ruShift.hide {
+  display: none;
+}
+
+.ruShiftCapsLock.hide {
+  display: none;
+}
+
+.keyboard.active {
+  background-color: red;
+}
+
+@media (min-width: 1024px) {
+  .keyboard {
+    gap: 12px;
+    width: 1000px;
+  }
+  .row {
+    height: 50px;
+  }
+  .key {
+    font-size: 22px;
+  }
+  .key.active {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .h1 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.1em;
+  }
+  .textarea {
+    font-size: 12px;
+    line-height: 1.1em;
+  }
+  .about {
+    color: #fafafa;
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 1.3em;
+    letter-spacing: 0.06em;
+  }
+  .keyboard {
+    gap: 5px;
+    width: 310px;
+    padding: 5px;
+  }
+  .row {
+    height: 20px;
+  }
+  .key {
+    font-size: 8px;
+  }
+  .key.active {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
