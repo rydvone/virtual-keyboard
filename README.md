@@ -1,4 +1,4 @@
-# virtual-keyboard-js
+# virtual-keyboard
 
 
 https://rydvone.github.io/virtual-keyboard-js/
